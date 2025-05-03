@@ -1,0 +1,7 @@
+<ivysettings>
+  <resolvers>
+    <chain name="central">
+      <ibiblio name="central" m2compatible="true" />
+    </chain>
+  </resolvers>
+</ivysettings>

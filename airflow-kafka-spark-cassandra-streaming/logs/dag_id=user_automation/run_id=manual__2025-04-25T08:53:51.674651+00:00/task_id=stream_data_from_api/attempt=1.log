@@ -1,0 +1,58 @@
+[2025-04-25T08:54:22.341+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: user_automation.stream_data_from_api manual__2025-04-25T08:53:51.674651+00:00 [queued]>
+[2025-04-25T08:54:22.348+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: user_automation.stream_data_from_api manual__2025-04-25T08:53:51.674651+00:00 [queued]>
+[2025-04-25T08:54:22.349+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2025-04-25T08:54:22.369+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): stream_data_from_api> on 2025-04-25 08:53:51.674651+00:00
+[2025-04-25T08:54:22.373+0000] {standard_task_runner.py:57} INFO - Started process 1056 to run task
+[2025-04-25T08:54:22.378+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'user_automation', 'stream_data_from_api', 'manual__2025-04-25T08:53:51.674651+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/kafka_stream.py', '--cfg-path', '/tmp/tmp183_jj9k']
+[2025-04-25T08:54:22.380+0000] {standard_task_runner.py:85} INFO - Job 4: Subtask stream_data_from_api
+[2025-04-25T08:54:22.425+0000] {task_command.py:415} INFO - Running <TaskInstance: user_automation.stream_data_from_api manual__2025-04-25T08:53:51.674651+00:00 [running]> on host b52332601896
+[2025-04-25T08:54:22.491+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airscholar' AIRFLOW_CTX_DAG_ID='user_automation' AIRFLOW_CTX_TASK_ID='stream_data_from_api' AIRFLOW_CTX_EXECUTION_DATE='2025-04-25T08:53:51.674651+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-25T08:53:51.674651+00:00'
+[2025-04-25T08:54:22.524+0000] {conn.py:380} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:29092 <connecting> [IPv4 ('172.19.0.8', 29092)]>: connecting to broker:29092 [('172.19.0.8', 29092) IPv4]
+[2025-04-25T08:54:22.525+0000] {conn.py:1205} INFO - Probing node bootstrap-0 broker version
+[2025-04-25T08:54:22.526+0000] {conn.py:410} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:29092 <connecting> [IPv4 ('172.19.0.8', 29092)]>: Connection complete.
+[2025-04-25T08:54:22.631+0000] {conn.py:1267} INFO - Broker version identified as 2.5.0
+[2025-04-25T08:54:22.632+0000] {conn.py:1268} INFO - Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+[2025-04-25T08:54:22.813+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py:1095 InsecureRequestWarning: Unverified HTTPS request is being made to host 'randomuser.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+[2025-04-25T08:54:35.916+0000] {logging_mixin.py:151} INFO - Record Inserted !!
+[2025-04-25T08:54:35.920+0000] {conn.py:380} INFO - <BrokerConnection node_id=1 host=broker:29092 <connecting> [IPv4 ('172.19.0.8', 29092)]>: connecting to broker:29092 [('172.19.0.8', 29092) IPv4]
+[2025-04-25T08:54:35.921+0000] {conn.py:410} INFO - <BrokerConnection node_id=1 host=broker:29092 <connecting> [IPv4 ('172.19.0.8', 29092)]>: Connection complete.
+[2025-04-25T08:54:35.921+0000] {conn.py:919} INFO - <BrokerConnection node_id=bootstrap-0 host=broker:29092 <connected> [IPv4 ('172.19.0.8', 29092)]>: Closing connection. 
+[2025-04-25T08:54:39.117+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py:1095 InsecureRequestWarning: Unverified HTTPS request is being made to host 'randomuser.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+[2025-04-25T08:54:55.616+0000] {logging_mixin.py:151} INFO - Record Inserted !!
+[2025-04-25T08:54:55.781+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py:1095 InsecureRequestWarning: Unverified HTTPS request is being made to host 'randomuser.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+[2025-04-25T08:55:14.639+0000] {logging_mixin.py:151} INFO - Record Inserted !!
+[2025-04-25T08:55:15.883+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py:1095 InsecureRequestWarning: Unverified HTTPS request is being made to host 'randomuser.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+[2025-04-25T08:55:31.077+0000] {logging_mixin.py:151} INFO - Record Inserted !!
+[2025-04-25T08:55:31.188+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py:1095 InsecureRequestWarning: Unverified HTTPS request is being made to host 'randomuser.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+[2025-04-25T08:55:46.567+0000] {logging_mixin.py:151} INFO - Record Inserted !!
+[2025-04-25T08:55:47.040+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py:1095 InsecureRequestWarning: Unverified HTTPS request is being made to host 'randomuser.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+[2025-04-25T08:56:04.370+0000] {logging_mixin.py:151} INFO - Record Inserted !!
+[2025-04-25T08:56:05.677+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py:1095 InsecureRequestWarning: Unverified HTTPS request is being made to host 'randomuser.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+[2025-04-25T08:56:19.347+0000] {logging_mixin.py:151} INFO - Record Inserted !!
+[2025-04-25T08:56:19.512+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py:1095 InsecureRequestWarning: Unverified HTTPS request is being made to host 'randomuser.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+[2025-04-25T08:56:33.163+0000] {logging_mixin.py:151} INFO - Record Inserted !!
+[2025-04-25T08:56:33.287+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py:1095 InsecureRequestWarning: Unverified HTTPS request is being made to host 'randomuser.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+[2025-04-25T08:56:48.524+0000] {logging_mixin.py:151} INFO - Record Inserted !!
+[2025-04-25T08:56:48.669+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py:1095 InsecureRequestWarning: Unverified HTTPS request is being made to host 'randomuser.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+[2025-04-25T08:57:10.758+0000] {logging_mixin.py:151} INFO - Record Inserted !!
+[2025-04-25T08:57:10.961+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py:1095 InsecureRequestWarning: Unverified HTTPS request is being made to host 'randomuser.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+[2025-04-25T08:57:27.939+0000] {logging_mixin.py:151} INFO - Record Inserted !!
+[2025-04-25T08:57:28.082+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py:1095 InsecureRequestWarning: Unverified HTTPS request is being made to host 'randomuser.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+[2025-04-25T08:57:41.650+0000] {logging_mixin.py:151} INFO - Record Inserted !!
+[2025-04-25T08:57:42.319+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py:1095 InsecureRequestWarning: Unverified HTTPS request is being made to host 'randomuser.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+[2025-04-25T08:57:55.369+0000] {logging_mixin.py:151} INFO - Record Inserted !!
+[2025-04-25T08:57:55.832+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py:1095 InsecureRequestWarning: Unverified HTTPS request is being made to host 'randomuser.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+[2025-04-25T08:58:09.993+0000] {logging_mixin.py:151} INFO - Record Inserted !!
+[2025-04-25T08:58:10.154+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py:1095 InsecureRequestWarning: Unverified HTTPS request is being made to host 'randomuser.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+[2025-04-25T08:58:27.497+0000] {logging_mixin.py:151} INFO - Record Inserted !!
+[2025-04-25T08:58:27.638+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py:1095 InsecureRequestWarning: Unverified HTTPS request is being made to host 'randomuser.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+[2025-04-25T08:58:44.707+0000] {logging_mixin.py:151} INFO - Record Inserted !!
+[2025-04-25T08:58:45.223+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py:1095 InsecureRequestWarning: Unverified HTTPS request is being made to host 'randomuser.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+[2025-04-25T08:59:05.860+0000] {logging_mixin.py:151} INFO - Record Inserted !!
+[2025-04-25T08:59:06.034+0000] {logging_mixin.py:151} WARNING - /home/***/.local/lib/python3.9/site-packages/urllib3/connectionpool.py:1095 InsecureRequestWarning: Unverified HTTPS request is being made to host 'randomuser.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+[2025-04-25T08:59:27.273+0000] {logging_mixin.py:151} INFO - Record Inserted !!
+[2025-04-25T08:59:27.277+0000] {conn.py:919} INFO - <BrokerConnection node_id=1 host=broker:29092 <connected> [IPv4 ('172.19.0.8', 29092)]>: Closing connection. 
+[2025-04-25T08:59:27.279+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-04-25T08:59:27.290+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=user_automation, task_id=stream_data_from_api, execution_date=20250425T085351, start_date=20250425T085422, end_date=20250425T085927
+[2025-04-25T08:59:27.341+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-04-25T08:59:27.356+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check
